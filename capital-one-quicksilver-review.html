@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capital One Quicksilver Review 2026 – Simple 1.5% Cash Back, No Fee</title>
+<meta name="description" content="The Capital One Quicksilver earns 1.5% on everything, charges no annual fee, and has no foreign transaction fees. Is it worth it?">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blue: #3d5af1;
+    --blue-dark: #2d46d6;
+    --navy: #2d3a5c;
+    --body: #4a5568;
+    --muted: #8a96b8;
+    --bg: #f7f9ff;
+    --white: #ffffff;
+    --accent: #f0f4ff;
+    --border: #e8edf5;
+    --green: #10b981;
+    --c1-red: #d03027;
+    --c1-mid: #b8231c;
+    --c1-dark: #8c1912;
+    --radius-card: 16px;
+    --radius-btn: 20px;
+    --radius-tag: 12px;
+    --shadow: 0 2px 12px rgba(61,90,241,0.07);
+    --shadow-md: 0 4px 24px rgba(61,90,241,0.13);
+  }
+
+  html { scroll-behavior: smooth; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--body); }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--white); border-bottom: 1px solid var(--border);
+    padding: 0 5%; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-brand { font-weight: 700; font-size: 1.2rem; color: var(--navy); letter-spacing: -0.02em; }
+  .nav-brand span { color: var(--blue); }
+
+  .btn-primary {
+    background: var(--blue); color: #fff; border: none; cursor: pointer;
+    padding: 10px 22px; border-radius: var(--radius-btn); font-weight: 600; font-size: 0.9rem;
+    text-decoration: none; display: inline-block;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  }
+  .btn-primary:hover { background: var(--blue-dark); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(61,90,241,0.3); }
+
+  .btn-outline {
+    background: transparent; color: var(--blue); border: 2px solid var(--blue); cursor: pointer;
+    padding: 10px 22px; border-radius: var(--radius-btn); font-weight: 600; font-size: 0.9rem;
+    text-decoration: none; display: inline-block; transition: background 0.2s, transform 0.15s;
+  }
+  .btn-outline:hover { background: var(--accent); transform: translateY(-1px); }
+
+  /* HERO */
+  .hero {
+    padding: 60px 5% 48px;
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 390px; gap: 60px; align-items: start;
+  }
+
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #e6faf3; color: #059669; border-radius: 20px;
+    padding: 6px 14px; font-size: 0.8rem; font-weight: 600; margin-bottom: 18px;
+  }
+  .nofx-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #fff3f3; color: #b91c1c; border-radius: 20px;
+    padding: 6px 14px; font-size: 0.8rem; font-weight: 600; margin-bottom: 18px; margin-left: 8px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.7rem, 3.2vw, 2.5rem); font-weight: 700; color: var(--navy);
+    line-height: 1.2; letter-spacing: -0.03em; margin-bottom: 8px;
+  }
+  .hero-sub { color: var(--muted); font-size: 0.95rem; font-weight: 500; margin-bottom: 18px; }
+  .stars { font-size: 1.3rem; color: #f59e0b; }
+  .rating-label { font-size: 0.85rem; color: var(--muted); margin-top: 2px; margin-bottom: 28px; }
+
+  .stat-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 28px; }
+  .stat-box {
+    background: var(--accent); border: 1px solid #d5e0ff; border-radius: var(--radius-card);
+    padding: 18px 14px; text-align: center;
+  }
+  .stat-box .stat-num { font-size: 1.6rem; font-weight: 700; color: var(--blue); line-height: 1; margin-bottom: 4px; }
+  .stat-box .stat-lbl { font-size: 0.72rem; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; }
+  .stat-box .stat-sub { font-size: 0.68rem; color: var(--body); font-weight: 500; margin-top: 3px; }
+
+  .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+  .hero-ctas .btn-primary, .hero-ctas .btn-outline { font-size: 1rem; padding: 13px 28px; }
+
+  /* CARD ART */
+  .card-art-wrap { position: sticky; top: 84px; }
+  .card-art {
+    width: 100%; aspect-ratio: 1.586;
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--c1-dark) 0%, var(--c1-mid) 45%, var(--c1-red) 80%, #e84040 100%);
+    position: relative; overflow: hidden;
+    box-shadow: 0 20px 60px rgba(176,35,28,0.38), 0 4px 18px rgba(0,0,0,0.16);
+    margin-bottom: 20px;
+  }
+  /* Capital One diagonal slash motif */
+  .card-slash {
+    position: absolute; top: -20%; left: 38%;
+    width: 5px; height: 160%;
+    background: rgba(255,255,255,0.1);
+    transform: rotate(20deg);
+  }
+  .card-slash-2 {
+    position: absolute; top: -20%; left: 46%;
+    width: 3px; height: 160%;
+    background: rgba(255,255,255,0.06);
+    transform: rotate(20deg);
+  }
+  .card-glow {
+    position: absolute; top: -30%; right: -10%;
+    width: 65%; height: 120%;
+    background: radial-gradient(ellipse, rgba(255,180,100,0.12) 0%, transparent 70%);
+  }
+  .card-chip {
+    position: absolute; top: 28%; left: 8%;
+    width: 13%; aspect-ratio: 1.4;
+    background: linear-gradient(135deg, #f0c040 0%, #d4a017 100%);
+    border-radius: 4px;
+  }
+  .card-issuer-art {
+    position: absolute; top: 12%; left: 8%;
+    color: rgba(255,255,255,0.65); font-size: clamp(0.58rem,1.4vw,0.72rem);
+    font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .card-name-art {
+    position: absolute; bottom: 22%; left: 8%;
+    color: rgba(255,255,255,0.95); font-size: clamp(0.65rem,1.8vw,0.84rem);
+    font-weight: 600; line-height: 1.3;
+  }
+  .mc-label-art {
+    position: absolute; bottom: calc(8% + clamp(22px,4.5vw,30px)); right: 8%;
+    color: rgba(255,255,255,0.65); font-size: 0.58rem; font-weight: 600;
+    letter-spacing: 0.06em; text-transform: uppercase;
+  }
+  .mc-circles {
+    position: absolute; bottom: 8%; right: 8%;
+    display: flex; align-items: center;
+  }
+  .mc-left { width: clamp(18px,3.5vw,26px); height: clamp(18px,3.5vw,26px); background: rgba(235,85,45,0.9); border-radius: 50%; }
+  .mc-right { width: clamp(18px,3.5vw,26px); height: clamp(18px,3.5vw,26px); background: rgba(240,165,30,0.9); border-radius: 50%; margin-left: clamp(-9px,-1.8vw,-12px); }
+
+  .glance-box {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius-card); padding: 16px 18px; box-shadow: var(--shadow);
+  }
+  .glance-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; margin-bottom: 10px; }
+  .glance-row { display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; padding: 6px 0; border-bottom: 1px solid var(--border); }
+  .glance-row:last-child { border-bottom: none; }
+  .glance-row span:first-child { color: var(--muted); }
+  .glance-row span:last-child { font-weight: 600; color: var(--navy); }
+
+  /* QUICK FACTS BAR */
+  .qf-bar { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 16px 5%; }
+  .qf-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 10px; }
+  .qf-pill { background: var(--bg); border: 1px solid var(--border); border-radius: 20px; padding: 8px 16px; font-size: 0.82rem; color: var(--body); font-weight: 500; }
+  .qf-pill strong { color: var(--navy); }
+
+  /* SECTIONS */
+  .section { padding: 56px 5%; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-alt { background: var(--white); }
+  .section-title { font-size: 1.45rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; letter-spacing: -0.02em; }
+  .section-sub { color: var(--muted); font-size: 0.92rem; margin-bottom: 32px; }
+
+  /* EARN RATES */
+  .earn-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 16px; }
+  .earn-card {
+    background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-card);
+    padding: 28px 20px; text-align: center; box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .earn-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+  .earn-card.featured { border-color: #c5d0ff; background: var(--accent); }
+  .earn-multi { font-size: 3.4rem; font-weight: 700; color: var(--blue); line-height: 1; letter-spacing: -0.04em; }
+  .earn-cat { font-size: 0.88rem; color: var(--body); font-weight: 600; margin-top: 8px; }
+  .earn-note { font-size: 0.76rem; color: var(--muted); margin-top: 4px; }
+
+  /* NO-FX SPOTLIGHT */
+  .spotlight-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 24px; }
+  .spotlight-card {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius-card); padding: 24px 22px; box-shadow: var(--shadow);
+    display: flex; gap: 16px; align-items: flex-start;
+  }
+  .spotlight-icon { font-size: 2rem; flex-shrink: 0; line-height: 1; }
+  .spotlight-title { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .spotlight-desc { font-size: 0.82rem; color: var(--body); line-height: 1.6; }
+  .spotlight-card.highlight { border-color: #c5d0ff; background: linear-gradient(140deg, #f4f7ff 0%, var(--accent) 100%); }
+
+  .base-note { margin-top: 20px; padding: 14px 18px; background: var(--accent); border-radius: var(--radius-tag); font-size: 0.85rem; color: var(--body); border-left: 3px solid var(--blue); }
+
+  /* COMPARISON STRIP */
+  .comp-strip {
+    margin-top: 20px; background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius-card); overflow: hidden; box-shadow: var(--shadow);
+  }
+  .comp-header { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; background: var(--navy); }
+  .comp-header div { padding: 12px 16px; font-size: 0.76rem; font-weight: 600; color: rgba(255,255,255,0.8); letter-spacing: 0.04em; text-transform: uppercase; }
+  .comp-row { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; border-bottom: 1px solid var(--border); }
+  .comp-row:last-child { border-bottom: none; }
+  .comp-row div { padding: 12px 16px; font-size: 0.82rem; color: var(--body); }
+  .comp-row div:first-child { color: var(--muted); font-weight: 500; }
+  .comp-row div.win { color: var(--green); font-weight: 700; }
+  .comp-row div.lose { color: var(--muted); }
+  .comp-row:hover div { background: var(--bg); }
+
+  /* BENEFITS */
+  .benefits-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .benefit-item { display: flex; align-items: flex-start; gap: 12px; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 16px 18px; box-shadow: var(--shadow); }
+  .benefit-icon { width: 28px; height: 28px; border-radius: 50%; background: var(--blue); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+  .benefit-icon svg { width: 14px; height: 14px; fill: none; stroke: #fff; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+  .benefit-text { font-size: 0.88rem; color: var(--body); line-height: 1.5; }
+  .benefit-text strong { color: var(--navy); }
+
+  /* FEES */
+  .fees-table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: var(--radius-card); overflow: hidden; box-shadow: var(--shadow); }
+  .fees-table tr { border-bottom: 1px solid var(--border); }
+  .fees-table tr:last-child { border-bottom: none; }
+  .fees-table td { padding: 16px 22px; font-size: 0.88rem; }
+  .fees-table td:first-child { color: var(--muted); font-weight: 500; width: 45%; }
+  .fees-table td:last-child { color: var(--navy); font-weight: 600; }
+  .fees-table tr:hover td { background: var(--accent); }
+  .fees-note { margin-top: 10px; font-size: 0.78rem; color: var(--muted); }
+
+  /* WHO IT'S FOR */
+  .for-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+  .for-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 20px 22px; box-shadow: var(--shadow); display: flex; gap: 16px; align-items: flex-start; }
+  .for-emoji { font-size: 1.6rem; line-height: 1; flex-shrink: 0; }
+  .for-text h4 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 5px; }
+  .for-text p { font-size: 0.85rem; color: var(--body); line-height: 1.65; }
+  .warn-item { border-color: #fde8e8; background: #fffafa; }
+
+  /* VERDICT */
+  .verdict-stars { font-size: 1.5rem; color: #f59e0b; margin-bottom: 4px; }
+  .verdict-score { font-size: 0.87rem; color: var(--muted); margin-bottom: 24px; }
+  .verdict-body p { font-size: 0.92rem; color: var(--body); line-height: 1.8; margin-bottom: 16px; }
+  .bottom-line { margin-top: 28px; padding: 20px 24px; background: var(--accent); border: 1.5px solid #c5d0ff; border-radius: var(--radius-card); border-left: 4px solid var(--blue); }
+  .bottom-line-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; margin-bottom: 6px; }
+  .bottom-line p { font-size: 0.92rem; color: var(--navy); font-weight: 600; line-height: 1.6; }
+
+  /* CTA BANNER */
+  .cta-banner { background: linear-gradient(135deg, #1a2f9e 0%, #2d46d6 50%, #3d5af1 100%); padding: 64px 5%; text-align: center; }
+  .cta-eyebrow { font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 8px; }
+  .cta-banner h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; color: #fff; margin-bottom: 8px; letter-spacing: -0.02em; }
+  .cta-banner > p { color: rgba(255,255,255,0.78); font-size: 1rem; margin-bottom: 12px; }
+  .cta-bonus { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; color: #fff; margin-bottom: 28px; letter-spacing: -0.03em; }
+  .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn-white { background: #fff; color: var(--blue); padding: 13px 28px; border-radius: var(--radius-btn); font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block; transition: transform 0.2s, box-shadow 0.2s; }
+  .btn-white:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
+  .btn-white-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.65); padding: 13px 28px; border-radius: var(--radius-btn); font-weight: 600; font-size: 1rem; text-decoration: none; display: inline-block; transition: background 0.2s; }
+  .btn-white-outline:hover { background: rgba(255,255,255,0.1); }
+
+  /* FOOTER */
+  .disclaimer { padding: 28px 5%; background: var(--white); border-top: 1px solid var(--border); }
+  .disclaimer p { max-width: 900px; margin: 0 auto; font-size: 0.75rem; color: var(--muted); line-height: 1.8; text-align: center; }
+  footer { background: var(--navy); padding: 20px 5%; text-align: center; font-size: 0.82rem; color: rgba(255,255,255,0.45); }
+  footer strong { color: rgba(255,255,255,0.8); }
+
+  /* RESPONSIVE */
+  @media (max-width: 860px) {
+    .hero { grid-template-columns: 1fr; gap: 36px; }
+    .card-art-wrap { position: static; max-width: 380px; }
+    .benefits-grid { grid-template-columns: 1fr; }
+    .spotlight-grid { grid-template-columns: 1fr; }
+    .comp-header, .comp-row { grid-template-columns: 1.5fr 1fr 1fr; }
+    .comp-header div:last-child, .comp-row div:last-child { display: none; }
+  }
+  @media (max-width: 520px) {
+    nav { padding: 0 4%; }
+    .hero { padding: 32px 4% 32px; }
+    .section { padding: 40px 4%; }
+    .stat-row { grid-template-columns: 1fr; gap: 8px; }
+    .hero-ctas { flex-direction: column; }
+    .hero-ctas a { text-align: center; }
+    .comp-header, .comp-row { grid-template-columns: 1.5fr 1fr 1fr; }
+    .cta-btns { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">Card<span>Reviews</span></div>
+  <a href="https://capitalone.com/credit-cards/quicksilver/" class="btn-primary" target="_blank" rel="noopener">Apply Now</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-left">
+    <div style="display:flex; flex-wrap:wrap; gap:0; align-items:center;">
+      <div class="hero-badge">✓ Offer verified June 16, 2026</div>
+      <div class="nofx-badge">✈️ $0 Foreign Transaction Fee</div>
+    </div>
+    <h1>Capital One Quicksilver Cash Rewards Credit Card</h1>
+    <div class="hero-sub">Capital One · Mastercard</div>
+    <div class="stars">★★★★½</div>
+    <div class="rating-label">4.5 / 5 — Editorial Rating</div>
+
+    <div class="stat-row">
+      <div class="stat-box">
+        <div class="stat-num">$200</div>
+        <div class="stat-lbl">Welcome Bonus</div>
+        <div class="stat-sub">after $500 in 90 days</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">$0</div>
+        <div class="stat-lbl">Annual Fee</div>
+        <div class="stat-sub">forever</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">5%</div>
+        <div class="stat-lbl">Best Earn Rate</div>
+        <div class="stat-sub">Capital One Travel</div>
+      </div>
+    </div>
+
+    <div class="hero-ctas">
+      <a href="https://capitalone.com/credit-cards/quicksilver/" class="btn-primary" target="_blank" rel="noopener">Apply Now →</a>
+      <a href="https://capitalone.com/credit-cards/quicksilver/" class="btn-outline" target="_blank" rel="noopener">Check Approval Odds</a>
+    </div>
+  </div>
+
+  <div class="card-art-wrap">
+    <div class="card-art">
+      <div class="card-slash"></div>
+      <div class="card-slash-2"></div>
+      <div class="card-glow"></div>
+      <div class="card-issuer-art">Capital One</div>
+      <div class="card-chip"></div>
+      <div class="card-name-art">Quicksilver<br>Cash Rewards</div>
+      <div class="mc-label-art">Mastercard</div>
+      <div class="mc-circles">
+        <div class="mc-left"></div>
+        <div class="mc-right"></div>
+      </div>
+    </div>
+    <div class="glance-box">
+      <div class="glance-label">At a Glance</div>
+      <div class="glance-row"><span>Everywhere</span><span style="color:var(--blue);">1.5% cash back</span></div>
+      <div class="glance-row"><span>Capital One Travel</span><span>5% on hotels &amp; rentals</span></div>
+      <div class="glance-row"><span>Annual Fee</span><span style="color:var(--green);">$0</span></div>
+      <div class="glance-row"><span>Foreign Transaction Fee</span><span style="color:var(--green);">$0</span></div>
+      <div class="glance-row"><span>Intro APR</span><span>0% for 15 months</span></div>
+      <div class="glance-row"><span>Welcome Bonus</span><span>$200 after $500</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK FACTS BAR -->
+<div class="qf-bar">
+  <div class="qf-inner">
+    <div class="qf-pill">💳 Credit Score: <strong>670–850 (Good–Excellent)</strong></div>
+    <div class="qf-pill">🌍 Foreign Transaction Fee: <strong style="color:var(--green);">$0 — None</strong></div>
+    <div class="qf-pill">🏆 Rewards: <strong>Cash Back</strong></div>
+    <div class="qf-pill">🔴 Network: <strong>Mastercard</strong></div>
+  </div>
+</div>
+
+<!-- EARN RATES -->
+<div class="section">
+  <div class="section-inner">
+    <h2 class="section-title">How You Earn Rewards</h2>
+    <p class="section-sub">Flat-rate simplicity at 1.5% everywhere — with a travel portal bonus for Capital One bookings.</p>
+
+    <div class="earn-grid">
+      <div class="earn-card featured">
+        <div class="earn-multi">1.5%</div>
+        <div class="earn-cat">Every Purchase, Everywhere</div>
+        <div class="earn-note">Unlimited · No categories to track</div>
+      </div>
+      <div class="earn-card">
+        <div class="earn-multi">5%</div>
+        <div class="earn-cat">Hotels &amp; Rental Cars</div>
+        <div class="earn-note">Booked via Capital One Travel</div>
+      </div>
+    </div>
+
+    <div class="base-note">
+      <strong>Base earn rate:</strong> 1.5% unlimited cash back on every purchase — no categories, no activation, no quarterly limits. Rewards never expire and there's no minimum redemption amount. The 5% rate on hotels, vacation rentals, and rental cars applies only when booked through the Capital One Travel portal.
+    </div>
+
+    <!-- NO FOREIGN FEE SPOTLIGHT — the card's real differentiator -->
+    <div style="margin-top:28px;">
+      <div style="font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:6px; letter-spacing:-0.01em;">The Differentiator: $0 Foreign Transaction Fee</div>
+      <div style="font-size:0.85rem; color:var(--muted); margin-bottom:16px;">The only no-annual-fee flat-rate cash back card with zero foreign transaction fees. Every other comparable card charges 3%.</div>
+      <div class="spotlight-grid">
+        <div class="spotlight-card highlight">
+          <div class="spotlight-icon">🌍</div>
+          <div>
+            <div class="spotlight-title">Use It Internationally Without Penalty</div>
+            <div class="spotlight-desc">At 3% foreign transaction fee, a $2,000 international trip would cost you $60 in fees with a competitor — erasing four months of 1.5% rewards. The Quicksilver earns 1.5% on every purchase abroad without a surcharge, making it the best no-fee card for occasional international travelers.</div>
+          </div>
+        </div>
+        <div class="spotlight-card">
+          <div class="spotlight-icon">✈️</div>
+          <div>
+            <div class="spotlight-title">Flat Rate Abroad = No Math Required</div>
+            <div class="spotlight-desc">Cards with foreign transaction fees require you to calculate whether earning rewards outweighs the fee. With the Quicksilver, the math is always clean: 1.5% earned, $0 deducted. Every swipe in Paris, Tokyo, or London earns the same rate as every swipe at home.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPETITOR COMPARISON -->
+    <div style="margin-top:28px;">
+      <div style="font-size:0.85rem; font-weight:700; color:var(--navy); margin-bottom:12px;">How It Compares — No-Fee Flat-Rate Cards</div>
+      <div class="comp-strip">
+        <div class="comp-header">
+          <div>Card</div>
+          <div>Base Rate</div>
+          <div>Annual Fee</div>
+          <div>Foreign Fee</div>
+        </div>
+        <div class="comp-row">
+          <div style="font-weight:600; color:var(--navy);">Capital One Quicksilver</div>
+          <div class="win">1.5%</div>
+          <div class="win">$0</div>
+          <div class="win">$0 ✓</div>
+        </div>
+        <div class="comp-row">
+          <div>Wells Fargo Active Cash</div>
+          <div class="win">2%</div>
+          <div class="win">$0</div>
+          <div class="lose">3%</div>
+        </div>
+        <div class="comp-row">
+          <div>Chase Freedom Unlimited</div>
+          <div>1.5% base</div>
+          <div class="win">$0</div>
+          <div class="lose">3%</div>
+        </div>
+        <div class="comp-row">
+          <div>Citi Double Cash</div>
+          <div class="win">2%</div>
+          <div class="win">$0</div>
+          <div class="lose">3%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BENEFITS -->
+<div class="section section-alt">
+  <div class="section-inner">
+    <h2 class="section-title">Card Benefits &amp; Perks</h2>
+    <p class="section-sub">A lean, honest benefit set — no fluff, no obscure perks you'll never use.</p>
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="benefit-text"><strong>No Annual Fee — Forever</strong>. The Quicksilver has no annual fee and no first-year-only waiver trick. It costs nothing to own, which means your 1.5% earn rate is pure return with zero offset.</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="benefit-text"><strong>No Foreign Transaction Fee</strong>. Earn 1.5% cash back on purchases made anywhere in the world with no surcharge. A rare combination at the no-annual-fee tier that makes this card genuinely useful for travel.</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="benefit-text"><strong>0% Intro APR for 15 months</strong> on purchases and balance transfers from account opening. Variable APR of 19.74%–29.74% applies after. One of the longer intro windows among no-fee flat-rate cards.</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="benefit-text"><strong>Extended Warranty</strong> — Extends the manufacturer's warranty on eligible purchases by up to one additional year, providing an extra layer of protection on electronics and appliances.</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="benefit-text"><strong>Travel Accident Insurance</strong> — Coverage for accidental death or dismemberment when traveling on a common carrier (flight, train, cruise) purchased with the card.</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="benefit-text"><strong>Flexible Redemption</strong> — Redeem as statement credit, check, gift cards, or through PayPal at checkout. No minimum redemption amount and cash back never expires while the account is open.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEES -->
+<div class="section">
+  <div class="section-inner">
+    <h2 class="section-title">Rates &amp; Fees</h2>
+    <p class="section-sub">Complete cost picture before you apply.</p>
+    <table class="fees-table">
+      <tr><td>Annual Fee</td><td style="color:var(--green);">$0 — No Annual Fee</td></tr>
+      <tr><td>Purchase APR</td><td>19.74% – 29.74% variable*</td></tr>
+      <tr><td>Intro APR (Purchases)</td><td>0% for 15 months from account opening</td></tr>
+      <tr><td>Intro APR (Balance Transfers)</td><td>0% for 15 months from account opening</td></tr>
+      <tr><td>Foreign Transaction Fee</td><td style="color:var(--green);">$0 — None</td></tr>
+      <tr><td>Balance Transfer Fee</td><td>4% (min. $4)</td></tr>
+      <tr><td>Cash Advance Fee</td><td>5% (min. $5)</td></tr>
+    </table>
+    <p class="fees-note">* APR is variable and based on the Prime Rate. Your actual APR depends on creditworthiness at time of application. The balance transfer fee of 4% is lower than the 5% charged by most comparable cards. Verify current rates at capitalone.com before applying.</p>
+  </div>
+</div>
+
+<!-- WHO IT'S FOR -->
+<div class="section section-alt">
+  <div class="section-inner">
+    <h2 class="section-title">Who Is This Card Best For?</h2>
+    <p class="section-sub">Three profiles where the Quicksilver's combination of simplicity and zero foreign fees creates clear value.</p>
+    <div class="for-grid">
+      <div class="for-item">
+        <div class="for-emoji">🌏</div>
+        <div class="for-text">
+          <h4>Occasional International Travelers Who Also Want Domestic Simplicity</h4>
+          <p>This is the Quicksilver's clearest win: it's the only no-annual-fee flat-rate cash back card with no foreign transaction fees. If you travel internationally two or three times per year — even just a week abroad each time — you'd pay $60–$150 in foreign transaction fees on a 3% card over those trips. The Quicksilver earns 1.5% on all of it instead of charging you extra. For someone who uses one card for everything, this is a meaningfully better outcome than a higher flat-rate card that penalizes international spending.</p>
+        </div>
+      </div>
+      <div class="for-item">
+        <div class="for-emoji">💳</div>
+        <div class="for-text">
+          <h4>New-to-Credit Cardholders Building Their First Rewards Relationship</h4>
+          <p>The Quicksilver's simplicity — 1.5% on everything, no categories, no activation, no quarterly limits — makes it an ideal first rewards card. There's nothing to misunderstand or forget. Capital One also has broader approval criteria than some major issuers, and the $0 foreign transaction fee means the card can grow with someone as their life becomes more internationally active, without needing to upgrade or swap cards.</p>
+        </div>
+      </div>
+      <div class="for-item">
+        <div class="for-emoji">🏨</div>
+        <div class="for-text">
+          <h4>Capital One Travel Bookers Who Want a No-Fee Portal Card</h4>
+          <p>The 5% on hotels and rental cars booked through Capital One Travel is a meaningful upside for anyone who already uses the portal for travel planning. Capital One Travel aggregates prices across major booking engines and often surfaces competitive rates. Combined with 1.5% on all other spending and no foreign transaction fees, the Quicksilver functions as a strong all-in-one travel companion that doesn't require a premium annual fee to unlock.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHO SHOULD LOOK ELSEWHERE -->
+<div class="section">
+  <div class="section-inner">
+    <h2 class="section-title">Who Should Consider Another Card?</h2>
+    <p class="section-sub">Honest cases where the Quicksilver's 1.5% base rate costs you money compared to alternatives.</p>
+    <div class="for-grid">
+      <div class="for-item warn-item">
+        <div class="for-emoji">⚠️</div>
+        <div class="for-text">
+          <h4>Purely Domestic Spenders Who Maximize Earning Rate</h4>
+          <p>If you never travel internationally and want the highest possible flat-rate return on domestic spending, the Wells Fargo Active Cash (2%) and Citi Double Cash (2%) both outperform the Quicksilver's 1.5% by a full half percentage point — and they do so with no annual fee. On $20,000 in annual spending, that gap amounts to $100/year. The Quicksilver's no-foreign-fee advantage doesn't apply domestically, so pure domestic spenders are leaving real money on the table versus the 2% alternatives.</p>
+        </div>
+      </div>
+      <div class="for-item warn-item">
+        <div class="for-emoji">⚠️</div>
+        <div class="for-text">
+          <h4>Heavy Category Spenders in Groceries, Dining, or Gas</h4>
+          <p>If one category dominates your spending, the Quicksilver's flat rate is almost certainly suboptimal. The Amex Blue Cash Preferred earns 6% at supermarkets, the Chase Freedom Unlimited earns 3% on dining, and the Citi Custom Cash automatically earns 5% in your top category — all at or near the no-fee tier. Unless your spending is genuinely spread across dozens of categories with no single leader, a targeted card in your highest category will meaningfully outperform 1.5% flat even after accounting for foreign transaction fees on a trip or two.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VERDICT -->
+<div class="section section-alt">
+  <div class="section-inner">
+    <h2 class="section-title">Our Verdict</h2>
+    <div class="verdict-stars">★★★★½</div>
+    <div class="verdict-score">4.5 out of 5 stars</div>
+    <div class="verdict-body">
+      <p>The Capital One Quicksilver earns its high rating not by having the best numbers in any single column, but by having the best combination of numbers for a specific type of cardholder that no other no-fee card serves well: the occasional international traveler who wants domestic simplicity. Every other flat-rate no-annual-fee card charges a 3% foreign transaction fee. The Quicksilver charges $0. That single distinction — invisible on paper until you use the card abroad — is worth $60–$150 or more per year for anyone who travels internationally at any frequency.</p>
+      <p>The 1.5% base rate trails the 2% offered by the Wells Fargo Active Cash and Citi Double Cash, which is a real cost for purely domestic spenders. On $24,000 in annual spending, the gap is $120/year — not trivial. But for cardholders who want one card to handle everything at home and abroad without thinking about which card to pull out at a Paris restaurant, the Quicksilver's $0 foreign fee often more than compensates. The math depends on your international spend frequency, but for anyone who travels even occasionally, the Quicksilver likely wins on total value.</p>
+      <p>The 15-month 0% intro APR, $200 welcome bonus with a $500 spend requirement, and travel accident insurance round out a card that does what it promises without gimmicks. Capital One's approval process tends to be somewhat more accessible than Chase or Amex, making this a strong option for applicants who are building credit or who have had difficulty with other issuers. It's not the highest-earning card in any specific category, but as a reliable, zero-maintenance, globally usable cash back card, it's hard to beat.</p>
+    </div>
+    <div class="bottom-line">
+      <div class="bottom-line-label">Bottom Line</div>
+      <p>The Capital One Quicksilver is the best no-annual-fee cash back card for anyone who travels internationally — its unique $0 foreign transaction fee eliminates the hidden cost that makes every other comparable flat-rate card a liability abroad.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <div class="cta-eyebrow">Capital One Quicksilver Cash Rewards Credit Card</div>
+  <h2>$200 Bonus · 1.5% Everywhere · $0 Foreign Fees</h2>
+  <p>Unlimited 1.5% cash back with no annual fee and no foreign transaction fees — ever.</p>
+  <div class="cta-bonus">$0 Annual Fee · 15-Month 0% Intro APR</div>
+  <div class="cta-btns">
+    <a href="https://capitalone.com/credit-cards/quicksilver/" class="btn-white" target="_blank" rel="noopener">Apply Now →</a>
+    <a href="https://capitalone.com/credit-cards/quicksilver/" class="btn-white-outline" target="_blank" rel="noopener">Check for Pre-Approval</a>
+  </div>
+</div>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer">
+  <p>Rates and offers current as of June 16, 2026. Verify current terms on the issuer's website before applying. This site may receive compensation when you click on links to products we review. See our full advertising disclosure. The Capital One Quicksilver Cash Rewards Credit Card is issued by Capital One, N.A. Capital One is not a sponsor of or affiliated with CardReviews. The 5% earn rate applies to hotels and rental cars booked through Capital One Travel only. Terms apply.</p>
+</div>
+
+<footer>
+  <strong>CardReviews</strong> &nbsp;·&nbsp; © 2026 CardReviews. All rights reserved.
+</footer>
+
+</body>
+</html>
