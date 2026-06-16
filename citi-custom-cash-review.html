@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Citi Custom Cash Review 2026 – Automatic 5% in Your Top Category</title>
+<meta name="description" content="The Citi Custom Cash automatically earns 5% in your top spend category each month with no annual fee. See if it's right for you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blue: #3d5af1;
+    --blue-dark: #2d46d6;
+    --navy: #2d3a5c;
+    --body: #4a5568;
+    --muted: #8a96b8;
+    --bg: #f7f9ff;
+    --white: #ffffff;
+    --accent: #f0f4ff;
+    --border: #e8edf5;
+    --green: #10b981;
+    --citi-blue: #003b70;
+    --citi-mid: #0057a8;
+    --citi-light: #1a78c2;
+    --radius-card: 16px;
+    --radius-btn: 20px;
+    --radius-tag: 12px;
+    --shadow: 0 2px 12px rgba(61,90,241,0.07);
+    --shadow-md: 0 4px 24px rgba(61,90,241,0.13);
+  }
+
+  html { scroll-behavior: smooth; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--body); }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--white); border-bottom: 1px solid var(--border);
+    padding: 0 5%; height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-brand { font-weight: 700; font-size: 1.2rem; color: var(--navy); letter-spacing: -0.02em; }
+  .nav-brand span { color: var(--blue); }
+
+  .btn-primary {
+    background: var(--blue); color: #fff; border: none; cursor: pointer;
+    padding: 10px 22px; border-radius: var(--radius-btn); font-weight: 600; font-size: 0.9rem;
+    text-decoration: none; display: inline-block;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  }
+  .btn-primary:hover { background: var(--blue-dark); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(61,90,241,0.3); }
+
+  .btn-outline {
+    background: transparent; color: var(--blue); border: 2px solid var(--blue); cursor: pointer;
+    padding: 10px 22px; border-radius: var(--radius-btn); font-weight: 600; font-size: 0.9rem;
+    text-decoration: none; display: inline-block; transition: background 0.2s, transform 0.15s;
+  }
+  .btn-outline:hover { background: var(--accent); transform: translateY(-1px); }
+
+  /* HERO */
+  .hero {
+    padding: 60px 5% 48px;
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 390px; gap: 60px; align-items: start;
+  }
+
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #e6faf3; color: #059669; border-radius: 20px;
+    padding: 6px 14px; font-size: 0.8rem; font-weight: 600; margin-bottom: 18px;
+  }
+  .auto-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #eef2ff; color: var(--blue); border-radius: 20px;
+    padding: 6px 14px; font-size: 0.8rem; font-weight: 600; margin-bottom: 18px; margin-left: 8px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.8rem, 3.4vw, 2.55rem); font-weight: 700; color: var(--navy);
+    line-height: 1.2; letter-spacing: -0.03em; margin-bottom: 8px;
+  }
+  .hero-sub { color: var(--muted); font-size: 0.95rem; font-weight: 500; margin-bottom: 18px; }
+  .stars { font-size: 1.3rem; color: #f59e0b; }
+  .rating-label { font-size: 0.85rem; color: var(--muted); margin-top: 2px; margin-bottom: 28px; }
+
+  .stat-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 28px; }
+  .stat-box {
+    background: var(--accent); border: 1px solid #d5e0ff; border-radius: var(--radius-card);
+    padding: 18px 14px; text-align: center;
+  }
+  .stat-box .stat-num { font-size: 1.6rem; font-weight: 700; color: var(--blue); line-height: 1; margin-bottom: 4px; }
+  .stat-box .stat-lbl { font-size: 0.72rem; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; }
+  .stat-box .stat-sub { font-size: 0.68rem; color: var(--body); font-weight: 500; margin-top: 3px; }
+
+  .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+  .hero-ctas .btn-primary, .hero-ctas .btn-outline { font-size: 1rem; padding: 13px 28px; }
+
+  /* CARD ART */
+  .card-art-wrap { position: sticky; top: 84px; }
+  .card-art {
+    width: 100%; aspect-ratio: 1.586;
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--citi-blue) 0%, var(--citi-mid) 55%, var(--citi-light) 100%);
+    position: relative; overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,59,112,0.38), 0 4px 16px rgba(0,0,0,0.14);
+    margin-bottom: 20px;
+  }
+  /* Arc motif echoing Citi's brand */
+  .card-arc {
+    position: absolute; bottom: -30%; right: -10%;
+    width: 70%; height: 130%;
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 50%;
+  }
+  .card-arc-2 {
+    position: absolute; bottom: -10%; right: 5%;
+    width: 50%; height: 100%;
+    border: 1.5px solid rgba(255,255,255,0.07);
+    border-radius: 50%;
+  }
+  .card-arc-3 {
+    position: absolute; top: -40%; left: -15%;
+    width: 55%; height: 120%;
+    background: rgba(255,255,255,0.03);
+    border-radius: 50%;
+  }
+  .card-chip {
+    position: absolute; top: 28%; left: 8%;
+    width: 13%; aspect-ratio: 1.4;
+    background: linear-gradient(135deg, #f0c040 0%, #d4a017 100%);
+    border-radius: 4px;
+  }
+  .card-issuer-art {
+    position: absolute; top: 12%; left: 8%;
+    color: rgba(255,255,255,0.65); font-size: clamp(0.58rem,1.4vw,0.72rem);
+    font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .card-name-art {
+    position: absolute; bottom: 22%; left: 8%;
+    color: rgba(255,255,255,0.95); font-size: clamp(0.68rem,1.9vw,0.88rem);
+    font-weight: 600; letter-spacing: 0.01em;
+  }
+  .card-network {
+    position: absolute; bottom: 10%; right: 8%;
+    color: rgba(255,255,255,0.88); font-size: clamp(0.62rem,1.6vw,0.78rem);
+    font-weight: 700; letter-spacing: 0.06em;
+  }
+  /* MC circles */
+  .mc-circles {
+    position: absolute; bottom: 8%; right: 8%;
+    display: flex; align-items: center;
+  }
+  .mc-left {
+    width: clamp(18px,3.5vw,26px); height: clamp(18px,3.5vw,26px);
+    background: rgba(235,85,45,0.85); border-radius: 50%;
+  }
+  .mc-right {
+    width: clamp(18px,3.5vw,26px); height: clamp(18px,3.5vw,26px);
+    background: rgba(240,165,30,0.85); border-radius: 50%;
+    margin-left: clamp(-9px,-1.8vw,-12px);
+  }
+  .mc-label {
+    position: absolute; bottom: calc(8% + clamp(22px,4.5vw,32px)); right: 8%;
+    color: rgba(255,255,255,0.7); font-size: 0.58rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  }
+
+  .glance-box {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius-card); padding: 16px 18px; box-shadow: var(--shadow);
+  }
+  .glance-label {
+    font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--muted); font-weight: 600; margin-bottom: 10px;
+  }
+  .glance-row {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.85rem; padding: 6px 0; border-bottom: 1px solid var(--border);
+  }
+  .glance-row:last-child { border-bottom: none; }
+  .glance-row span:first-child { color: var(--muted); }
+  .glance-row span:last-child { font-weight: 600; color: var(--navy); }
+
+  /* QUICK FACTS BAR */
+  .qf-bar {
+    background: var(--white);
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    padding: 16px 5%;
+  }
+  .qf-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 10px; }
+  .qf-pill {
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 20px; padding: 8px 16px;
+    font-size: 0.82rem; color: var(--body); font-weight: 500;
+  }
+  .qf-pill strong { color: var(--navy); }
+
+  /* SECTIONS */
+  .section { padding: 56px 5%; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-alt { background: var(--white); }
+  .section-title { font-size: 1.45rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; letter-spacing: -0.02em; }
+  .section-sub { color: var(--muted); font-size: 0.92rem; margin-bottom: 32px; }
+
+  /* EARN — CUSTOM CASH special layout */
+  .earn-hero-wrap {
+    display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; margin-bottom: 16px;
+  }
+  .earn-hero-card {
+    background: linear-gradient(140deg, #f0f4ff 0%, #e6ecff 100%);
+    border: 2px solid #c5d0ff; border-radius: var(--radius-card);
+    padding: 36px 28px; text-align: center; box-shadow: var(--shadow-md);
+    position: relative; overflow: hidden;
+  }
+  .earn-hero-card::before {
+    content: '';
+    position: absolute; top: -30%; right: -20%;
+    width: 60%; height: 120%;
+    background: radial-gradient(ellipse, rgba(61,90,241,0.08) 0%, transparent 70%);
+  }
+  .earn-hero-card .earn-multi { font-size: 5rem; font-weight: 700; color: var(--blue); line-height: 1; letter-spacing: -0.05em; }
+  .earn-hero-card .earn-cat { font-size: 1rem; color: var(--navy); font-weight: 700; margin-top: 10px; }
+  .earn-hero-card .earn-note { font-size: 0.82rem; color: var(--muted); margin-top: 6px; }
+  .auto-pill {
+    display: inline-block; background: var(--blue); color: #fff;
+    border-radius: 12px; padding: 4px 10px; font-size: 0.7rem; font-weight: 700;
+    margin-top: 12px; letter-spacing: 0.03em;
+  }
+
+  .earn-base-card {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius-card); padding: 28px 20px; text-align: center;
+    box-shadow: var(--shadow); display: flex; flex-direction: column; justify-content: center;
+  }
+  .earn-base-card .earn-multi { font-size: 3.4rem; font-weight: 700; color: var(--muted); line-height: 1; letter-spacing: -0.04em; }
+  .earn-base-card .earn-cat { font-size: 0.88rem; color: var(--body); font-weight: 600; margin-top: 8px; }
+  .earn-base-card .earn-note { font-size: 0.76rem; color: var(--muted); margin-top: 4px; }
+
+  /* ELIGIBLE CATEGORIES GRID */
+  .cat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px,1fr)); gap: 10px; margin-top: 16px; }
+  .cat-tag {
+    background: var(--accent); border: 1px solid #d5e0ff; border-radius: var(--radius-tag);
+    padding: 10px 12px; text-align: center; font-size: 0.8rem; font-weight: 600; color: var(--navy);
+    display: flex; flex-direction: column; align-items: center; gap: 5px;
+  }
+  .cat-tag .cat-icon { font-size: 1.2rem; }
+  .base-note {
+    margin-top: 16px; padding: 14px 18px; background: var(--accent);
+    border-radius: var(--radius-tag); font-size: 0.85rem; color: var(--body);
+    border-left: 3px solid var(--blue);
+  }
+
+  /* HOW IT WORKS */
+  .how-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-bottom: 28px; }
+  .how-step {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius-card); padding: 22px 18px; box-shadow: var(--shadow); text-align: center;
+  }
+  .how-num {
+    width: 36px; height: 36px; border-radius: 50%; background: var(--blue);
+    color: #fff; font-weight: 700; font-size: 1rem;
+    display: flex; align-items: center; justify-content: center; margin: 0 auto 14px;
+  }
+  .how-title { font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .how-desc { font-size: 0.8rem; color: var(--body); line-height: 1.6; }
+
+  /* BENEFITS */
+  .benefits-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .benefit-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius-card); padding: 16px 18px; box-shadow: var(--shadow);
+  }
+  .benefit-icon {
+    width: 28px; height: 28px; border-radius: 50%; background: var(--blue);
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;
+  }
+  .benefit-icon svg { width: 14px; height: 14px; fill: none; stroke: #fff; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+  .benefit-text { font-size: 0.88rem; color: var(--body); line-height: 1.5; }
+  .benefit-text strong { color: var(--navy); }
+
+  /* FEES */
+  .fees-table { width: 100%; border-collapse: collapse; background: var(--white); border-radius: var(--radius-card); overflow: hidden; box-shadow: var(--shadow); }
+  .fees-table tr { border-bottom: 1px solid var(--border); }
+  .fees-table tr:last-child { border-bottom: none; }
+  .fees-table td { padding: 16px 22px; font-size: 0.88rem; }
+  .fees-table td:first-child { color: var(--muted); font-weight: 500; width: 45%; }
+  .fees-table td:last-child { color: var(--navy); font-weight: 600; }
+  .fees-table tr:hover td { background: var(--accent); }
+  .fees-note { margin-top: 10px; font-size: 0.78rem; color: var(--muted); }
+
+  /* WHO IT'S FOR */
+  .for-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+  .for-item {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius-card); padding: 20px 22px;
+    box-shadow: var(--shadow); display: flex; gap: 16px; align-items: flex-start;
+  }
+  .for-emoji { font-size: 1.6rem; line-height: 1; flex-shrink: 0; }
+  .for-text h4 { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 5px; }
+  .for-text p { font-size: 0.85rem; color: var(--body); line-height: 1.65; }
+  .warn-item { border-color: #fde8e8; background: #fffafa; }
+
+  /* VERDICT */
+  .verdict-stars { font-size: 1.5rem; color: #f59e0b; margin-bottom: 4px; }
+  .verdict-score { font-size: 0.87rem; color: var(--muted); margin-bottom: 24px; }
+  .verdict-body p { font-size: 0.92rem; color: var(--body); line-height: 1.8; margin-bottom: 16px; }
+  .bottom-line {
+    margin-top: 28px; padding: 20px 24px;
+    background: var(--accent); border: 1.5px solid #c5d0ff;
+    border-radius: var(--radius-card); border-left: 4px solid var(--blue);
+  }
+  .bottom-line-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; margin-bottom: 6px; }
+  .bottom-line p { font-size: 0.92rem; color: var(--navy); font-weight: 600; line-height: 1.6; }
+
+  /* CTA BANNER */
+  .cta-banner {
+    background: linear-gradient(135deg, #1a2f9e 0%, #2d46d6 50%, #3d5af1 100%);
+    padding: 64px 5%; text-align: center;
+  }
+  .cta-eyebrow { font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 8px; }
+  .cta-banner h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; color: #fff; margin-bottom: 8px; letter-spacing: -0.02em; }
+  .cta-banner > p { color: rgba(255,255,255,0.78); font-size: 1rem; margin-bottom: 12px; }
+  .cta-bonus { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; color: #fff; margin-bottom: 28px; letter-spacing: -0.03em; }
+  .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn-white {
+    background: #fff; color: var(--blue); padding: 13px 28px; border-radius: var(--radius-btn);
+    font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-block;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-white:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
+  .btn-white-outline {
+    background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.65);
+    padding: 13px 28px; border-radius: var(--radius-btn); font-weight: 600; font-size: 1rem;
+    text-decoration: none; display: inline-block; transition: background 0.2s;
+  }
+  .btn-white-outline:hover { background: rgba(255,255,255,0.1); }
+
+  /* FOOTER */
+  .disclaimer { padding: 28px 5%; background: var(--white); border-top: 1px solid var(--border); }
+  .disclaimer p { max-width: 900px; margin: 0 auto; font-size: 0.75rem; color: var(--muted); line-height: 1.8; text-align: center; }
+  footer { background: var(--navy); padding: 20px 5%; text-align: center; font-size: 0.82rem; color: rgba(255,255,255,0.45); }
+  footer strong { color: rgba(255,255,255,0.8); }
+
+  /* RESPONSIVE */
+  @media (max-width: 860px) {
+    .hero { grid-template-columns: 1fr; gap: 36px; }
+    .card-art-wrap { position: static; max-width: 380px; }
+    .benefits-grid { grid-template-columns: 1fr; }
+    .how-grid { grid-template-columns: 1fr; }
+    .earn-hero-wrap { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 520px) {
+    nav { padding: 0 4%; }
+    .hero { padding: 32px 4% 32px; }
+    .section { padding: 40px 4%; }
+    .stat-row { grid-template-columns: 1fr; gap: 8px; }
+    .hero-ctas { flex-direction: column; }
+    .hero-ctas a { text-align: center; }
+    .cat-grid { grid-template-columns: repeat(3,1fr); }
+    .cta-btns { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">Card<span>Reviews</span></div>
+  <a href="https://www.citi.com/credit-cards/citi-custom-cash-credit-card" class="btn-primary" target="_blank" rel="noopener">Apply Now</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-left">
+    <div style="display:flex; flex-wrap:wrap; gap:0; align-items:center;">
+      <div class="hero-badge">✓ Offer verified June 16, 2026</div>
+      <div class="auto-badge">⚡ Automatically adapts each month</div>
+    </div>
+    <h1>Citi Custom Cash℠ Card</h1>
+    <div class="hero-sub">Citi · Mastercard</div>
+    <div class="stars">★★★★½</div>
+    <div class="rating-label">4.5 / 5 — Editorial Rating</div>
+
+    <div class="stat-row">
+      <div class="stat-box">
+        <div class="stat-num">$200</div>
+        <div class="stat-lbl">Welcome Bonus</div>
+        <div class="stat-sub">after $1,500 in 6 months</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">$0</div>
+        <div class="stat-lbl">Annual Fee</div>
+        <div class="stat-sub">forever</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">5%</div>
+        <div class="stat-lbl">Best Earn Rate</div>
+        <div class="stat-sub">top category, auto</div>
+      </div>
+    </div>
+
+    <div class="hero-ctas">
+      <a href="https://www.citi.com/credit-cards/citi-custom-cash-credit-card" class="btn-primary" target="_blank" rel="noopener">Apply Now →</a>
+      <a href="https://www.citi.com/credit-cards/citi-custom-cash-credit-card" class="btn-outline" target="_blank" rel="noopener">Check Approval Odds</a>
+    </div>
+  </div>
+
+  <div class="card-art-wrap">
+    <div class="card-art">
+      <div class="card-arc"></div>
+      <div class="card-arc-2"></div>
+      <div class="card-arc-3"></div>
+      <div class="card-issuer-art">Citi</div>
+      <div class="card-chip"></div>
+      <div class="card-name-art">Custom Cash℠</div>
+      <div class="mc-label">Mastercard</div>
+      <div class="mc-circles">
+        <div class="mc-left"></div>
+        <div class="mc-right"></div>
+      </div>
+    </div>
+    <div class="glance-box">
+      <div class="glance-label">At a Glance</div>
+      <div class="glance-row"><span>Top Category (auto)</span><span style="color:var(--blue); font-size:0.92rem;">5% (up to $500/mo)</span></div>
+      <div class="glance-row"><span>Everything Else</span><span>1%</span></div>
+      <div class="glance-row"><span>Annual Fee</span><span style="color:var(--green);">$0</span></div>
+      <div class="glance-row"><span>Intro APR</span><span>0% for 15 months</span></div>
+      <div class="glance-row"><span>Welcome Bonus</span><span>$200 after $1,500</span></div>
+      <div class="glance-row"><span>Rewards Currency</span><span>ThankYou® Points</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK FACTS BAR -->
+<div class="qf-bar">
+  <div class="qf-inner">
+    <div class="qf-pill">💳 Credit Score: <strong>670–850 (Good–Excellent)</strong></div>
+    <div class="qf-pill">🌍 Foreign Transaction Fee: <strong>3%</strong></div>
+    <div class="qf-pill">🏆 Rewards: <strong>Cash Back / ThankYou® Points</strong></div>
+    <div class="qf-pill">🔴 Network: <strong>Mastercard</strong></div>
+  </div>
+</div>
+
+<!-- EARN RATES -->
+<div class="section">
+  <div class="section-inner">
+    <h2 class="section-title">How You Earn Rewards</h2>
+    <p class="section-sub">The Citi Custom Cash does one thing no other no-fee card does: it finds your highest-spend category each billing cycle and automatically applies 5% — no activation, no category selection, no app visits required.</p>
+
+    <!-- HOW IT WORKS steps -->
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="how-num">1</div>
+        <div class="how-title">Spend Normally</div>
+        <div class="how-desc">Use the card across any eligible categories throughout your billing cycle. No need to pre-select or register anything.</div>
+      </div>
+      <div class="how-step">
+        <div class="how-num">2</div>
+        <div class="how-title">Citi Detects Your Top Category</div>
+        <div class="how-desc">At the end of each billing cycle, Citi identifies which eligible category you spent the most in — automatically.</div>
+      </div>
+      <div class="how-step">
+        <div class="how-num">3</div>
+        <div class="how-title">5% Applied Retroactively</div>
+        <div class="how-desc">Your top category earns 5% (up to $500 in spend, then 1%). Everything else earns 1%. No action needed on your part.</div>
+      </div>
+    </div>
+
+    <div class="earn-hero-wrap">
+      <div class="earn-hero-card">
+        <div class="earn-multi">5%</div>
+        <div class="earn-cat">Your #1 Eligible Category</div>
+        <div class="earn-note">Up to $500 in purchases per billing cycle</div>
+        <div class="auto-pill">⚡ Automatic — No Activation</div>
+      </div>
+      <div class="earn-base-card">
+        <div class="earn-multi">1%</div>
+        <div class="earn-cat">Everything Else</div>
+        <div class="earn-note">Unlimited, no cap</div>
+      </div>
+    </div>
+
+    <div style="margin-top:20px;">
+      <div style="font-size:0.85rem; font-weight:600; color:var(--navy); margin-bottom:12px;">Eligible 5% Categories</div>
+      <div class="cat-grid">
+        <div class="cat-tag"><div class="cat-icon">🛒</div>Grocery Stores</div>
+        <div class="cat-tag"><div class="cat-icon">⛽</div>Gas Stations</div>
+        <div class="cat-tag"><div class="cat-icon">🍽️</div>Restaurants</div>
+        <div class="cat-tag"><div class="cat-icon">✈️</div>Air Travel</div>
+        <div class="cat-tag"><div class="cat-icon">🏨</div>Hotels</div>
+        <div class="cat-tag"><div class="cat-icon">🚂</div>Transit</div>
+        <div class="cat-tag"><div class="cat-icon">💊</div>Drug Stores</div>
+        <div class="cat-tag"><div class="cat-icon">🎧</div>Streaming</div>
+        <div class="cat-tag"><div class="cat-icon">🏋️</div>Fitness Clubs</div>
+        <div class="cat-tag"><div class="cat-icon">🏠</div>Home Improvement</div>
+      </div>
+    </div>
+
+    <div class="base-note" style="margin-top:16px;">
+      <strong>Cap note:</strong> The 5% rate applies to the first $500 in purchases in your top eligible category each billing cycle ($25 max cash back at 5%/month). After $500, that category earns 1%. All other purchases earn 1% with no limit. Rewards are earned as Citi ThankYou® Points; 100 points = $1.
+    </div>
+  </div>
+</div>
+
+<!-- BENEFITS -->
+<div class="section section-alt">
+  <div class="section-inner">
+    <h2 class="section-title">Card Benefits &amp; Perks</h2>
+    <p class="section-sub">A clean, honest benefit set built around everyday protection and intro financing.</p>
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="benefit-text"><strong>No Annual Fee — Ever</strong>. Unlike cards that waive the fee for year one only, the Citi Custom Cash has no annual fee permanently. Your earnings are pure return.</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="benefit-text"><strong>0% Intro APR for 15 months</strong> on purchases and balance transfers. One of the longest intro periods among no-fee cash back cards. Variable APR of 18.99%–28.99% after.</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="benefit-text"><strong>Automatic 5% — Zero Maintenance</strong>. No rotating category registration, no app check-ins, no quarterly activations. The card's intelligence handles everything behind the scenes.</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="benefit-text"><strong>$0 Liability on Unauthorized Charges</strong>. You're protected against fraudulent transactions with Citi's zero liability policy and 24/7 fraud monitoring.</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="benefit-text"><strong>Citi ThankYou® Points Flexibility</strong>. Rewards redeem as statement credit, direct deposit, or ThankYou® Points transferable to travel partners if you hold a premium Citi card.</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="benefit-text"><strong>Mastercard Worldwide Acceptance</strong>. As a Mastercard, this card is accepted at more international locations than Amex — useful as a backup travel card despite the foreign transaction fee.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEES -->
+<div class="section">
+  <div class="section-inner">
+    <h2 class="section-title">Rates &amp; Fees</h2>
+    <p class="section-sub">Complete cost breakdown before you apply.</p>
+    <table class="fees-table">
+      <tr><td>Annual Fee</td><td style="color:var(--green);">$0 — No Annual Fee</td></tr>
+      <tr><td>Purchase APR</td><td>18.99% – 28.99% variable*</td></tr>
+      <tr><td>Intro APR (Purchases)</td><td>0% for 15 months from account opening</td></tr>
+      <tr><td>Intro APR (Balance Transfers)</td><td>0% for 15 months from account opening</td></tr>
+      <tr><td>Foreign Transaction Fee</td><td>3% of each transaction in U.S. dollars</td></tr>
+      <tr><td>Balance Transfer Fee</td><td>5% (min. $5)</td></tr>
+      <tr><td>Cash Advance Fee</td><td>5% (min. $10)</td></tr>
+    </table>
+    <p class="fees-note">* APR is variable and based on the Prime Rate. Your actual APR depends on creditworthiness at time of application. Verify current rates at citi.com before applying.</p>
+  </div>
+</div>
+
+<!-- WHO IT'S FOR -->
+<div class="section section-alt">
+  <div class="section-inner">
+    <h2 class="section-title">Who Is This Card Best For?</h2>
+    <p class="section-sub">Three spending profiles where the Custom Cash's automatic intelligence genuinely wins.</p>
+    <div class="for-grid">
+      <div class="for-item">
+        <div class="for-emoji">🛒</div>
+        <div class="for-text">
+          <h4>Single-Category Dominators Who Don't Want to Think</h4>
+          <p>If one category — say, groceries — reliably accounts for your largest monthly spend, the Custom Cash applies 5% automatically every single month without you doing anything. Compare that to the Chase Freedom Flex, which requires quarterly category registration, or Discover it Cash Back, which requires you to remember to activate each quarter. The Custom Cash is the no-friction version of rotating category rewards — perfect for people who want the earning rate without the administrative overhead.</p>
+        </div>
+      </div>
+      <div class="for-item">
+        <div class="for-emoji">🔄</div>
+        <div class="for-text">
+          <h4>Households With a Shifting #1 Spend Category</h4>
+          <p>The Custom Cash's monthly reset is a feature, not a constraint. If your highest-spend category shifts by season — gas in summer road trip months, dining during the holidays, home improvement in spring — the card adapts with you. You'll earn 5% wherever you naturally spend the most each cycle, without pre-planning or category selection. This behavioral adaptability is the card's defining competitive advantage over every fixed-category card in the no-fee tier.</p>
+        </div>
+      </div>
+      <div class="for-item">
+        <div class="for-emoji">🧩</div>
+        <div class="for-text">
+          <h4>Citi Premium Cardholders Looking for a Cash Back Companion</h4>
+          <p>If you hold the Citi Strata Premier℠ or another ThankYou® Points card, the Custom Cash's rewards pool into the same currency — and those points can be transferred to airline and hotel partners for outsized value. The pairing strategy is similar to Chase's Freedom + Sapphire ecosystem: use the Custom Cash for everyday 5% earning, then transfer points to the premium card for travel redemptions that can push effective value well above 1¢ per point.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHO SHOULD LOOK ELSEWHERE -->
+<div class="section">
+  <div class="section-inner">
+    <h2 class="section-title">Who Should Consider Another Card?</h2>
+    <p class="section-sub">Honest situations where the Custom Cash's structure works against you.</p>
+    <div class="for-grid">
+      <div class="for-item warn-item">
+        <div class="for-emoji">⚠️</div>
+        <div class="for-text">
+          <h4>High Spenders Who Need More Than $500/Month at 5%</h4>
+          <p>The $500 monthly cap at 5% is a hard ceiling — you earn a maximum of $25/month (or $300/year) at the elevated rate before the rate drops to 1%. If your grocery spend alone is $1,000+/month, you're earning 5% on the first $500 and only 1% on the rest. In that scenario, the Amex Blue Cash Preferred's 6% on up to $6,000 annually ($500/month) with no monthly cap reset is a structurally better choice — even after the $95 annual fee.</p>
+        </div>
+      </div>
+      <div class="for-item warn-item">
+        <div class="for-emoji">⚠️</div>
+        <div class="for-text">
+          <h4>Even Spenders Who Spread Purchases Across Many Categories</h4>
+          <p>The Custom Cash's intelligence only benefits you when one category clearly dominates. If you spend roughly equal amounts on groceries, dining, gas, and Amazon in a given month, the 5% gets applied to the single highest category — and the rest earns just 1%. A flat-rate card like the Wells Fargo Active Cash (2% on everything) or Chase Freedom Unlimited (1.5% base) may produce higher total rewards for genuinely diversified spenders who never have a clear monthly category winner.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VERDICT -->
+<div class="section section-alt">
+  <div class="section-inner">
+    <h2 class="section-title">Our Verdict</h2>
+    <div class="verdict-stars">★★★★½</div>
+    <div class="verdict-score">4.5 out of 5 stars</div>
+    <div class="verdict-body">
+      <p>The Citi Custom Cash℠ is the smartest no-annual-fee cash back card available today — not because it has the most categories or the highest cap, but because it removes the single most common point of failure in rewards card ownership: forgetting to activate. Rotating category cards with 5% earn rates have existed for years, but they all require some form of manual opt-in. The Custom Cash eliminates that entirely, letting the card's algorithm handle the optimization while you spend normally. For the right user, this behavioral simplicity makes the card far more valuable in practice than its raw earning numbers suggest on paper.</p>
+      <p>The $500 monthly cap at 5% is the main structural constraint to understand before applying. It works out to $25 per month in peak-category earnings — meaningful but not exceptional. Where the card earns its high rating is in the combination of the automatic mechanism, the $0 annual fee, the 15-month 0% intro APR (one of the longest in the no-fee tier), and the ThankYou® Points optionality for Citi ecosystem cardholders. No single one of these features is unique; together, they form a genuinely compelling package.</p>
+      <p>The card's ideal user is someone who has one category that reliably leads their spending most months — groceries, dining, or gas — and wants to be rewarded for that pattern without managing a spreadsheet. The 3% foreign transaction fee and absence of any travel-specific benefits mean this card belongs at home, not abroad. But as a domestic everyday earner that requires zero category management, the Citi Custom Cash represents the most evolved version of the automatic-rewards concept currently available at no cost.</p>
+    </div>
+    <div class="bottom-line">
+      <div class="bottom-line-label">Bottom Line</div>
+      <p>The Citi Custom Cash℠ is the best set-and-forget rewards card in the no-annual-fee category — its automatic 5% on your top monthly spend category removes every maintenance burden while still delivering a leading earn rate for single-category-dominant spenders.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <div class="cta-eyebrow">Citi Custom Cash℠ Card</div>
+  <h2>Automatic 5% — No Activation, No Annual Fee</h2>
+  <p>Earns 5% in your top eligible category each billing cycle, automatically.</p>
+  <div class="cta-bonus">$200 Bonus · $0 Annual Fee · 15-Month 0% APR</div>
+  <div class="cta-btns">
+    <a href="https://www.citi.com/credit-cards/citi-custom-cash-credit-card" class="btn-white" target="_blank" rel="noopener">Apply Now →</a>
+    <a href="https://www.citi.com/credit-cards/citi-custom-cash-credit-card" class="btn-white-outline" target="_blank" rel="noopener">Check for Pre-Approval</a>
+  </div>
+</div>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer">
+  <p>Rates and offers current as of June 16, 2026. Verify current terms on the issuer's website before applying. This site may receive compensation when you click on links to products we review. See our full advertising disclosure. The Citi Custom Cash℠ Card is issued by Citibank, N.A. Citi is not a sponsor of or affiliated with CardReviews. Welcome offer fulfilled as 20,000 ThankYou® Points, redeemable for $200 cash back. The 5% earn rate applies to the top eligible category up to the first $500 in purchases per billing cycle; 1% applies after. Eligible categories subject to change. Terms apply.</p>
+</div>
+
+<footer>
+  <strong>CardReviews</strong> &nbsp;·&nbsp; © 2026 CardReviews. All rights reserved.
+</footer>
+
+</body>
+</html>
